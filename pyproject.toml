@@ -1,0 +1,34 @@
+[project]
+name = "cnn4-cifar10"
+version = "0.1.0"
+description = "CNN for CIFAR-10 (Assignment 2 Section C)"
+readme = "README.md"
+requires-python = "==3.12.2"
+dependencies = [
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "torchinfo>=1.8",
+    "matplotlib>=3.7",
+    "scikit-learn>=1.3",
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "jupyter>=1.0",
+    "ipykernel>=6.0",
+]
+
+[project.optional-dependencies]
+# Uncomment and use: uv sync --extra cuda
+# cuda = [
+#     "torch>=2.0; platform_system=='Windows'",
+#     "torchvision>=0.15",
+# ]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }
+torchvision = { index = "pytorch-cu130" }
+
+[tool.uv]

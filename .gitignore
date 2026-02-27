@@ -1,0 +1,62 @@
+# ----- Python -----
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ----- Jupyter Notebook -----
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ----- PyTorch / ML -----
+# Trained model checkpoints (large files)
+Models/
+*.pth
+*.pt
+*.ckpt
+
+# ----- Data (large datasets) -----
+data/
+*.tar.gz
+*.zip
+
+# ----- Jupyter notebook output (optional: remove if you want to track PNGs) -----
+CNN4_CIFAR_10_files/
+
+# ----- Environment & secrets -----
+.env
+.env.*
+*.log
+
+# ----- IDE -----
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ----- OS -----
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ----- uv -----
+.uv/
