@@ -3,7 +3,7 @@ name = "cnn4-cifar10"
 version = "0.1.0"
 description = "CNN for CIFAR-10 (Assignment 2 Section C)"
 readme = "README.md"
-requires-python = "==3.12.2"
+requires-python = "==3.12.12"
 dependencies = [
     "torch>=2.0",
     "torchvision>=0.15",
